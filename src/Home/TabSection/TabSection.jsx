@@ -12,7 +12,7 @@ const TabSection = () => {
             <h2 className='text-[32px] font-bold bg-clip-text text-transparent bg-gradient-to-b from-blue-900 to-blue-500'>Relations and Functions ( Mathematics )</h2>
             <div className=' w-[500px] h-[389px] mx-auto mt-16'>
                 <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                    <TabList className="mb-8 bg-slate-500 pb-2 w-[390px] mx-auto text-[#696671] text-base font-semibold">
+                    <TabList className="mb-8  pb-2 w-[390px] mx-auto text-[#696671] text-base font-semibold">
                         <Tab>Study</Tab>
                         <Tab>Quiz</Tab>
                         <Tab>Test</Tab>
@@ -52,7 +52,10 @@ const TabSection = () => {
             <style>
                 {`
                 .react-tabs__tab--selected {
-                    border: 4px solid #06286E;
+                    border-top:0px;
+                    border-left:0px;
+                    border-right:0px;
+                    border-bottom: 4px solid #06286E;
                   
                 }
                 .react-tabs__tab {
