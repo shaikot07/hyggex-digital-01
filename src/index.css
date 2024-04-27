@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.react-tabs__tab--selected {
+    border-bottom: 4px solid pink;
+  }
