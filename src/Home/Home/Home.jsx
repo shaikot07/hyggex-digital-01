@@ -1,9 +1,10 @@
+import TabSection from "../TabSection/TabSection";
 
 
 const Home = () => {
     return (
         <div>
-            this is a  Home pages
+            <TabSection></TabSection>
         </div>
     );
 };
