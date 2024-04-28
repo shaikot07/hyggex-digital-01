@@ -4,9 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import StudyTab from './StudyTab/StudyTab';
 
 const TabSection = () => {
-    const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
     const [tabIndex, setTabIndex] = useState(0);
-
     return (
         <div className='max-w-6xl mx-auto'>
             <h2 className='text-[32px] font-bold bg-clip-text text-transparent bg-gradient-to-b from-blue-900 to-blue-500'>Relations and Functions ( Mathematics )</h2>
