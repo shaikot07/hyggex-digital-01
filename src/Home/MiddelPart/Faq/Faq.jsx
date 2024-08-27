@@ -8,10 +8,10 @@ const Faq = () => {
                 <div className="collapse collapse-arrow bg-base-200 border-2 border-[#06286E]">
                     <input type="radio" name="my-accordion-2" defaultChecked />
                     <div className="collapse-title text-1xl font-medium">
-                        Click to open this one and close others
+                        Click to Open This One And Close Others
                     </div>
                     <div className="collapse-content">
-                        {/* <p>hello</p> */}
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet justo sed massa fermentum vehicula in id diam. Nam eget ullamcorper lorem, posuere gravida odio. Quisque lacinia tortor ac dui lobortis vulputate. Integer iaculis dapibus turpis et tincidunt. Maecenas eleifend ut lacus vitae blandit.</p>
                     </div>
                 </div>
                 <div className="collapse collapse-arrow bg-base-200 mt-4 border-2 border-[#06286E]">
@@ -20,7 +20,7 @@ const Faq = () => {
                         Click to open this one and close others
                     </div>
                     <div className="collapse-content">
-                        <p>hello</p>
+                        <p>Hello</p>
                     </div>
                 </div>
                 <div className="collapse collapse-arrow bg-base-200 mt-4 border-2 border-[#06286E]">
@@ -29,7 +29,7 @@ const Faq = () => {
                         Click to open this one and close others
                     </div>
                     <div className="collapse-content">
-                        <p>hello</p>
+                        <p>Hello</p>
                     </div>
                 </div>
             </div>
