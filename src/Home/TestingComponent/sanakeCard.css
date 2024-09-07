@@ -1,0 +1,121 @@
+.container {
+    width: 945px;
+    margin: 0 auto;
+    position: relative;
+    background-color: green;
+    padding: 20px;
+  }
+  /********************** Effect 1 *************************/
+  
+  /********************** Effect 8 *************************/
+  /* .effect8 {
+      float: left;
+      display: inline-block;
+      width: 100%;
+    max-width: 300px;
+      margin-right: 1.5%;
+      position: relative;
+      cursor: pointer;
+  }
+  .effect8 img {
+      max-width: 100%
+  }
+  .effect8 a {
+      text-decoration: none;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 40px;
+    height: 0px;
+    position: absolute;
+    transition: 0.5s ease all;
+      visibility: hidden;
+      opacity: 0;
+    bottom: 150px;
+    transform: scale(0.3);
+    transform: rotate(-180deg);
+    
+  }	
+  .effect8:hover a {
+    background-color: rgba(240,160,140,1);
+    visibility: visible;
+    height: 90%;
+    padding: 40.1% 0; 
+    opacity: 1;
+    bottom: 3px;
+    transform: scale(1);
+    transform: rotate(0deg);
+  
+  } */
+  /********************** test code *************************/
+  .effect8 {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px; /* Ensure there's a height */
+    margin-right: 1.5%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #eee; /* Temporary background to help with layout visibility */
+}
+
+.effect8 img {
+    max-width: 100%;
+}
+
+.effect8 a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 40px;
+    height: 0px;
+    position: absolute;
+    transition: 0.5s ease all;
+    visibility: hidden;
+    opacity: 0;
+    bottom: 150px;
+    transform: scale(0.3);
+}
+
+.effect8:hover a {
+    background-color: rgba(240,160,140,1);
+    visibility: visible;
+    height: 90%;
+    padding: 40.1% 0;
+    opacity: 1;
+    bottom: 3px;
+    transform: scale(1);
+    transform: rotate(0deg);
+}
+
+/* Adding the wave effect on hover */
+.effect8::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: rgba(240,160,140,0.7);
+    transform: translateY(0);
+    z-index: -1; /* Ensure it stays behind the main content */
+}
+
+/* Keyframes for wave animation */
+.effect8:hover::after {
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

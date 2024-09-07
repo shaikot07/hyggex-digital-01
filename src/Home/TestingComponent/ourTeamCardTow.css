@@ -1,0 +1,203 @@
+*,
+*:before, 
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__collection {
+  position: relative;
+  display: block;
+  background: rgba(10,10,10,.5);
+  padding: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+  overflow: hidden;
+}
+
+.cards {
+  width: 300px;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  float: left;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  margin: 10px;
+}
+
+.cards--two {
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.cards--two p {
+  position: absolute;
+  top: 83%;
+  left: -100%;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  z-index: 8;
+  transition: all .6s ease;
+}
+
+.cards--two:hover p {
+  left: 8%;
+}
+
+.cards--two img {
+  transition: all .2s ease;
+}
+
+.cards--two:hover img {
+  transform: translateY(-15px);
+}
+
+.cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 5;
+  opacity: .9;
+  transition: all .3s ease-in-out;
+}
+
+.cards--two__tri {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #fff;
+  opacity: .9;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -100%;
+  transition: all .3s ease-in-out;
+}
+
+.cards--two__tri:before {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid rgba(34, 65, 154, .8);
+  position: absolute;
+  content: '';
+  display: block;
+  top: -220px;
+  right: -612px;
+  transition: all .3s ease-in-out;
+  transition-delay: .2s;
+}
+
+.cards--two:hover .cards--two__tri {
+  right: -40%;
+}
+
+.cards--two__rect:before {
+  content: '';
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #f07306;
+  transform: translateY(200px);
+  z-index: 2;
+  transition: all .3s ease-in-out;
+  transition-delay: .1s;
+}
+
+.cards__list {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  z-index: 9;
+}
+
+.cards__list li {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+  transform: translateY(100px);
+}
+
+.cards--two:hover .cards__list li {
+  transform: translateY(0);
+}
+
+.cards--three {
+  position: relative;
+  z-index: 10;
+}
+
+.cards--three:hover .cards--three__rect-1 {
+  left: 10%;
+}
+
+.cards--three__rect-1 {
+  background: #fff;
+  width: 200px;
+  height: 110px;
+  transform: skewX(-20deg);
+  display: block;
+  position: absolute;
+  top: 73%;
+  opacity: .9;
+  left: -100%;
+  z-index: 8;
+  transition: all .5s ease-in;
+}
+
+.cards--three__rect-1 .shadow-1 {
+  background: #9b1308;
+  width: 230px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  left: -200%;
+  z-index: -1;
+  transition: all .3s ease-in;
+}
+
+.cards--three__list {
+  list-style: none;
+  position: absolute;
+  top: -9px;
+  right: 7px;
+  padding-top: 60px;
+  transition: all .4s ease;
+}
+
+.cards--three__list li {
+  display: inline-block;
+  margin: 4px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(87, 204, 253, .9);
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 12px;
+  transition: all .3s ease;
+  transform: translateX(500%);
+}
